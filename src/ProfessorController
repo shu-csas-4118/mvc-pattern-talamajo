@@ -1,0 +1,23 @@
+public class ProfessorController {
+
+	private ProfessorView pView;
+
+	private Professor professor;
+
+
+	public ProfessorController(Professor professor, ProfessorView professorView) {
+
+		this.professor = professor;
+
+		this.pView = professorView;
+
+	}
+
+
+	public void printProfessorDetails() {
+
+		this.pView.printProfessorDetails(this.professor);
+
+	}
+}
+
