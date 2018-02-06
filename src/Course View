@@ -1,0 +1,87 @@
+import java.util.*;
+
+public class CourseView {
+		private Course course;
+
+
+		public CourseView (Course course) {
+
+			this.course = course;
+
+		}
+
+
+		public CourseView() {
+
+
+		}
+
+
+		public void printCourseDetails(Course course) {
+
+			this.course = course;
+
+			printCourseDetails();
+
+		}
+
+
+		public void setCourseDetails (Course course) {
+
+		}
+
+
+		public void printCourseDetails() {
+
+		if (this.course == null) throw new IllegalArgumentException("course");
+
+		if (this.course != null) {
+
+			System.out.println("Course Name is " + this.course.getCourseName());
+
+			System.out.println("Course Number is " + this.course.getCourseNumber());
+
+			System.out.println("Course Credits is "+ this.course.getCredit());
+		
+			System.out.println("Course Professor is "+ this.course.getProfessor());
+			
+			}
+
+
+		List<String> list = new ArrayList<String>();
+		list.add("Software Engineering");
+		list.add("123456");
+		list.add("4");
+		list.add("Professor Garett");
+		
+		System.out.println(list.get(0));
+		
+		for (String s: list) {
+			System.out.println(s);
+			
+		}
+			List<String> list1 = new ArrayList<String>();
+			list1.add("Calculus");
+			list1.add("234567");
+			list1.add("4");
+			list1.add("Professor Marlowe");
+			
+			System.out.println(list1.get(0));
+			
+			for (String t: list1) {
+				System.out.println(t);
+				
+			}
+				List<String> list2 = new ArrayList<String>();
+				list2.add("Data Mining");
+				list2.add("345678");
+				list2.add("3");
+				list2.add("Professor Minimair");
+				
+				System.out.println(list2.get(0));
+				
+				for (String u: list2) {
+					System.out.println(u);
+					
+				}
+		}}
