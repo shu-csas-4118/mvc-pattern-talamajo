@@ -1,0 +1,76 @@
+public class Course {
+		private String CourseName;
+
+		private int CourseNumber;
+		
+		private int Credit;
+		
+		private String Professor;
+
+
+		public Course (String CourseName, int CourseNumber, int Credit, String Professor) {
+
+			this.CourseName = CourseName;
+
+			this.CourseNumber = CourseNumber;
+			
+			this.Credit = Credit;
+			
+			this.Professor = Professor;
+			
+
+		}
+
+
+		public String getCourseName() {
+
+			return this.CourseName;
+
+		}
+
+
+		public void setCourseName (String CourseName) {
+
+			this.CourseName = CourseName;
+
+		}
+
+		public int getCourseNumber() {
+
+			return this.CourseNumber;
+
+		}
+
+
+		public void setCourseNumber (int CourseNumber) {
+			
+			this.CourseNumber = CourseNumber;
+
+		}
+		
+		public int getCredit() {
+
+			return this.Credit;
+
+		}
+
+
+		public void setCredit (int Credit) {
+
+			this.Credit = Credit;
+
+		}
+		
+		
+		public String getProfessor() {
+
+			return this.Professor;
+			
+		}
+		
+		public void setProfessor (String Professor) {
+			
+			this.Professor = Professor;
+			
+		}
+		
