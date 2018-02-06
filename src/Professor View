@@ -1,0 +1,56 @@
+public class ProfessorView {
+
+		private Professor professor;
+
+
+		public ProfessorView (Professor professor) {
+
+			this.professor = professor;
+
+		}
+
+
+		public ProfessorView() {
+
+
+		}
+
+
+		public void printProfessorDetails(Professor professor) {
+
+			this.professor = professor;
+
+			printProfessorDetails();
+
+		}
+
+
+		public void setProfessorDetails (Professor professor) {
+
+		}
+
+
+		public void printProfessorDetails() {
+
+		if (this.professor == null) throw new IllegalArgumentException("professor");
+
+		if (this.professor != null) {
+
+			System.out.println("Professor's First Name is " + this.professor.getFirstName());
+
+			System.out.println("Professor's Last Name is " + this.professor.getLastName());
+
+			System.out.println("Professor's Phone Number is "+ this.professor.getPhoneNumber());
+		
+			System.out.println("Professor's Email is "+ this.professor.getEmail());
+			
+		
+			}
+
+		}
+
+
+
+
+
+	}
